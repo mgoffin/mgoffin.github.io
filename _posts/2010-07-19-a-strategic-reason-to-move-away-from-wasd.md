@@ -42,9 +42,3 @@ While I was thinking of a new layout, I noticed my hand resting on certain keys 
 I tried using RSDG (shifting one key to the right). It&#8217;s also pretty comfortable, but I find that hitting TAB becomes annoying, SHIFT is ok but sometimes my pinky hits Z, CTRL is too hard to quickly use, H doesn&#8217;t make sense for grenade and T doesn&#8217;t make sense for reload, and Q becomes difficult to hit making it useless. 
 
 Of course, you need to use what is right for you, but from a strategic standpoint, I found that moving away from WASD made using the keyboard so much easier and more comfortable. Maybe EASF isn&#8217;t for you, but I highly recommend experimenting and finding the best keybinding layout for your hand. I&#8217;ve been using this layout for 9 years and it hasn&#8217;t let me down yet. It&#8217;s also really fun to watch people try and play a game on my machine!
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=A+Strategic+Reason+To+Move+Away+From+WASD+http%3A%2F%2Fis.gd%2FAWhQu4" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=A+Strategic+Reason+To+Move+Away+From+WASD+http%3A%2F%2Fis.gd%2FAWhQu4', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

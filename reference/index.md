@@ -34,9 +34,3 @@ This page is a place for links that I&#8217;ve found useful in the past and migh
 **Machine Learning:**
 
   * <a href="http://burakkanber.com/blog/machine-learning-genetic-algorithms-part-1-javascript/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://burakkanber.com/blog/machine-learning-genetic-algorithms-part-1-javascript/', 'Genetic Algorithms Part 1 &#8211; Javascript']);" >Genetic Algorithms Part 1 &#8211; Javascript</a>
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=Reference+http%3A%2F%2Fis.gd%2FteITqW" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=Reference+http%3A%2F%2Fis.gd%2FteITqW', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

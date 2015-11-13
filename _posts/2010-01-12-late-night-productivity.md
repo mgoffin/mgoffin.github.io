@@ -17,9 +17,3 @@ For the fifth day in a row I find myself awake at almost 1am, and there&#8217;s 
 With my late night tonight, I setup this domain, purchased a VPS from <a href="https://www.linode.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.linode.com/', 'Linode']);" >Linode</a>, and built the site. I think the biggest pain was configuring <a href="http://nginx.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://nginx.org/', 'nginx']);" >nginx</a> with php-fastcgi support. On that note, I find it horribly frustrating that nginx, one of the most lightweight and speedy web servers, causes so much <a href="http://library.linode.com/web-servers/nginx/php-fastcgi-ubuntu9.10-karmic" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://library.linode.com/web-servers/nginx/php-fastcgi-ubuntu9.10-karmic', 'pain']);" >pain</a> to get PHP working. I hardly think that installing spawn-fcgi, and writing a bunch of custom executables and init scripts is an adequate way to go about doing it. But hey, at least it works. 
 
 I guess I&#8217;ll get back to working on the site. If I can&#8217;t get tired soon, I might as well take a shower and go back to work&#8230;
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=Late+Night+Productivity+http%3A%2F%2Fis.gd%2FFCf8CD" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=Late+Night+Productivity+http%3A%2F%2Fis.gd%2FFCf8CD', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

@@ -61,7 +61,7 @@ Simple enough. Edit your **haproxy.cfg** and add this into your &#8220;global&#8
         stats socket    /tmp/haproxy
 </pre>
 
-<a href="http://www.mgoff.in/2010/04/18/haproxy-reloading-your-config-with-minimal-service-impact/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.mgoff.in/2010/04/18/haproxy-reloading-your-config-with-minimal-service-impact/', 'Reload your HAProxy config']);" >Reload your HAProxy config</a> and you should now see a socket setup in **/tmp** (note in the <a href="http://www.freebsd.org/cgi/man.cgi?query=ls" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.freebsd.org/cgi/man.cgi?query=ls', 'ls']);" >ls</a> output that the &#8220;s&#8221; at the beginning of the permission set denotes the file type as a socket):
+and you should now see a socket setup in **/tmp** (note in the <a href="http://www.freebsd.org/cgi/man.cgi?query=ls" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.freebsd.org/cgi/man.cgi?query=ls', 'ls']);" >ls</a> output that the &#8220;s&#8221; at the beginning of the permission set denotes the file type as a socket):
 
 <pre># ls -lah /tmp/haproxy
 srwxr-xr-x 1 root root 0 2010-07-14 12:53 /tmp/haproxy
@@ -79,9 +79,3 @@ To query for some stats, you can try the following commands:
 </pre>
 
 More information on interacting with HAProxy through the stats socket can be found in section **&#8220;9.2. Unix Socket commands&#8221;** of the configuration.txt file I linked to above (it&#8217;s the last section in the file).
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=HAProxy%3A+Gathering+Stats+Using+%60socat%60+http%3A%2F%2Fis.gd%2FFynnNa" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=HAProxy%3A+Gathering+Stats+Using+%60socat%60+http%3A%2F%2Fis.gd%2FFynnNa', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

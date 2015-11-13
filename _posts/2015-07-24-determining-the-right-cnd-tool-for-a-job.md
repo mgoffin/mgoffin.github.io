@@ -31,7 +31,7 @@ I’ve spent time reviewing the general tasks performed on a regular basis in ac
 
 To help facilitate such an impact assessment, but more importantly to provide a “big picture” view of incident response tasks for which tools could be a differentiator, I created a ring diagram that generalizes the tasks and groups them by the M&R life cycle. See Figure 1: Task Analysis for Cyber Threats (TACT) diagram.
 
-<a href="http://www.mgoff.in/dump/images/tact.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.mgoff.in/dump/images/tact.png', '']);" target="_blank"><img src="http://www.mgoff.in/dump/images/tact_small.png" alt="Figure 1: Task Analysis for Cyber Threats (TACT) diagram" /></a>  
+<a href="http://mgoffin.github.io/images/tact.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://mgoffin.github.io/images/tact.png', '']);" target="_blank"><img src="http://mgoffin.github.io/images/tact_small.png" alt="Figure 1: Task Analysis for Cyber Threats (TACT) diagram" /></a>  
 **Figure 1: Task Analysis for Cyber Threats (TACT) diagram**
 
 **Differentiate the tasks to find the tools **
@@ -69,9 +69,3 @@ Let&#8217;s take a look at an example using the &#8220;Isolate and Decode Networ
 Investing time to assess your existing workflows, procedures, and tools using the TACT diagram as a beginning outline might help you identify what gaps, inefficiencies in workflows and procedures, and ways to streamline your responsiveness to an Incident.
 
 As I discuss Task Analysis with other groups I may refine this diagram to reflect the changes in the Cyber-landscape. If you have any input, I&#8217;d love to hear your feedback!
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=Determining+the+Right+CND+Tool+for+a+Job+http%3A%2F%2Fis.gd%2FKuN4W0" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=Determining+the+Right+CND+Tool+for+a+Job+http%3A%2F%2Fis.gd%2FKuN4W0', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

@@ -36,9 +36,3 @@ You&#8217;re done, by the way. This uses your settings, and converts all of the 
 </pre>
 
 This will convert all of the tabs to spaces and save the file for you. Enjoy!
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=IndentationError%3A+unexpected+indent+http%3A%2F%2Fis.gd%2Fu0j73d" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=IndentationError%3A+unexpected+indent+http%3A%2F%2Fis.gd%2Fu0j73d', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

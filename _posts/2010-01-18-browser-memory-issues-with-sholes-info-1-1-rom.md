@@ -22,9 +22,3 @@ With the release of the <a href="http://www.sholes.info/2010/01/16/2-0-1-sholes-
 Another tip I&#8217;ll throw in as a free bonus is to get SetCPU from the Market. Some people (myself included) have seen problems where the phone takes a while to wake from sleep, or respond to an unlock swipe (getting a phone call makes it near impossible to get it to wake up). Enable profiles in SetCPU and only enable the Sleep profile. Edit it and set the max/min CPU to 250. People have said this seems to work helping get the phone to wake up quickly. 
 
 As a head&#8217;s up, it seems that people have started picking up the OTA updates. Seems a little early, and no one I know directly has a confirmed update. Then again, we&#8217;re running 1.1 and it disables OTA so we can work on it before updating.
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=Browser+Memory+Issues+With+Sholes.info+1.1+ROM+http%3A%2F%2Fis.gd%2F1qRqU1" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=Browser+Memory+Issues+With+Sholes.info+1.1+ROM+http%3A%2F%2Fis.gd%2F1qRqU1', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

@@ -36,9 +36,3 @@ From a TOTP perspective, the window of attack becomes severely limited. In the c
 To reflect this in the interface, we added the countdown timer and disable the login button so it is clear to the end-user what is going on. It doesn&#8217;t prevent people from crafting requests and submitting them manually so the backend code doesn&#8217;t assume the timer prevents people from submitting attempts more than once every 10 seconds. 
 
 There are many ways this can be enhanced. For example, instead of having the 10 second blackout period be static, you could change it so every attempt within that period resets it. This way for anyone failing more than once in the blackout period, they will always be blacked out and none of their authentication attempts will be used. Another option would be extending the blackout window to be more than 10 seconds whether it be permanently increased to another value (like 15 seconds) or that every failed attempt compounds on the original 10 seconds.
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=CRITs+Authentication+http%3A%2F%2Fis.gd%2FZIDGKd" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=CRITs+Authentication+http%3A%2F%2Fis.gd%2FZIDGKd', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

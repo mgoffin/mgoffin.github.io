@@ -92,9 +92,3 @@ Now that you have copied your configuration files over, and your personalized co
 </pre>
 
 This shouldn&#8217;t return any errors, just a list of database changes that were made to accommodate the new install. If that is successful, you can restart your services (we use Apache, so it was just a matter of restarting Apache) and then visit your Gitorious page to make sure nothing is horribly broken. If there are any problems, it is most likely an issue with the version of Ruby, or of the gems you have installed. Review the contents of **/path/to/new/gitorious/install/README** for information on what versions are required and how to install them.
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=Upgrading+Gitorious+http%3A%2F%2Fis.gd%2FOduRs5" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=Upgrading+Gitorious+http%3A%2F%2Fis.gd%2FOduRs5', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

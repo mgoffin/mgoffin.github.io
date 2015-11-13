@@ -34,9 +34,3 @@ tar.close()
 </pre>
 
 The basic idea is you use TarInfo to specify the filename, size, modified time (this is important otherwise tar will complain when the date is older than <a href="http://en.wikipedia.org/wiki/Epoch_(reference_date)" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://en.wikipedia.org/wiki/Epoch_(reference_date)', 'epoch']);" >epoch</a>), etc. You use StringIO to turn your data into an object tarfile will accept, and you use the two to add the file to the archive. This works really well, except for one issue that I am still working on. If you bunzip2 the compressed archive, and then attempt to do a **tar -t** on it, it hangs and does nothing. It&#8217;s possible that gnu tar has a problem, or that the way tarfile is creating the file isn&#8217;t correct, but it does decompress and explode properly which is the important part!
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=Writing+Files+From+GridFS+To+An+Archive+Without+Writing+To+Disk+First+http%3A%2F%2Fis.gd%2FJflBab" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=Writing+Files+From+GridFS+To+An+Archive+Without+Writing+To+Disk+First+http%3A%2F%2Fis.gd%2FJflBab', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

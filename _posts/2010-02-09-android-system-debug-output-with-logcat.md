@@ -25,9 +25,3 @@ $ adb shell start
 </pre>
 
 You can also set this by default in **/data/local.prop**.
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=Android+System+Debug+Output+With+Logcat+http%3A%2F%2Fis.gd%2FGjzQdh" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=Android+System+Debug+Output+With+Logcat+http%3A%2F%2Fis.gd%2FGjzQdh', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

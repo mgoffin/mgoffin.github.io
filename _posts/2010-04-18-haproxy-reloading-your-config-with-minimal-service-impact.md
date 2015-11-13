@@ -81,9 +81,3 @@ sys     0m0.004s
 I&#8217;ve specified the config file I want to use and the pid file haproxy is currently using. The **$(cat /var/run/haproxy.pid)** takes the output of **cat /var/run/haproxy.pid** and passes it in to the -sf parameter as a list, which is what it is expecting. You will notice that the time is actually faster too (.012s sys, and .004s real). It may not seem like much, but if you are dealing with very high volumes of traffic, this can be pretty important. Luckily for us it doesn&#8217;t matter because we&#8217;ve been able to reload the haproxy configuration without dropping any connections and without causing any customer-facing issues. 
 
 **UPDATE:** There is a reload in some of the init.d scripts (I haven&#8217;t checked every OS, so this can vary), but it uses the -st option which will break existing sessions, as opposed to using -sf to do a graceful hand-off. You can modify the haproxy_reload() function to use the -sf if you want. I also find it a bit confusing that the documentation uses **$(cat /path/to/pidfile)** whereas this haproxy_reload() function uses **$(<$PIDFILE)**. Either should work, but really, way to lead by example&#8230;
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=HAProxy%3A+Reloading+Your+Config+With+Minimal+Service+Impact+http%3A%2F%2Fis.gd%2FFCO5TO" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=HAProxy%3A+Reloading+Your+Config+With+Minimal+Service+Impact+http%3A%2F%2Fis.gd%2FFCO5TO', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

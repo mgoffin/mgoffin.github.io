@@ -32,8 +32,3 @@ au! Syntax vcl source ~/.vim/syntax/vcl.vim
 
 Now I can enjoy syntax highlighting when ripping through example code like I would most other things I edit with VIM.
 
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=VIM+Syntax+Highlighting+For+Varnish+VCL+Files+http%3A%2F%2Fis.gd%2F1xx1tg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=VIM+Syntax+Highlighting+For+Varnish+VCL+Files+http%3A%2F%2Fis.gd%2F1xx1tg', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>

@@ -30,9 +30,3 @@ The issue manifested because they decided to put values in the global **/etc/zsh
 </pre>
 
 Fixed! You&#8217;ll have to invoke a new shell for this to take effect of course. What this does is it tells ZSH to ignore the global rc file before loading your own. The only drawback from this is that if there are any specific things from the global rc file that you wanted, you&#8217;ll have to copy them into your own. Is it a pain that we have to do this at all just because Debian wants to be different? Sure. But it&#8217;s a few extra seconds tacked onto copying your own .zshrc file to the machine that I am more than happy to take to get ZSH behaving like it should!
-
-<div class="tweetthis" style="text-align:right;">
-  <p>
-    <a href="http://twitter.com/intent/tweet?text=ZSH+Command+History%3A+Cursor+at+the+end+of+the+line%21+http%3A%2F%2Fis.gd%2FNd7maS" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/intent/tweet?text=ZSH+Command+History%3A+Cursor+at+the+end+of+the+line%21+http%3A%2F%2Fis.gd%2FNd7maS', '']);" class="tt"  title="Post to Twitter"><img class="nothumb" src="http://www.mgoff.in/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a>
-  </p>
-</div>
