@@ -26,9 +26,10 @@ This just blows my mind. Talk about going the extra mile to squeeze out as much 
 
 I&#8217;ve been sifting through VCL files in my free time to accumulate a list of nifty tricks that I might be interesting in using in the future. <a href="http://www.vim.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.vim.org/', 'VIM']);" >VIM</a> being my editor of choice, I hunted for a syntax file that would help when reading VCL files. I ran across <a href="http://cvs.pld-linux.org/cgi-bin/cvsweb.cgi/packages/vim-syntax-vcl/vcl.vim" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://cvs.pld-linux.org/cgi-bin/cvsweb.cgi/packages/vim-syntax-vcl/vcl.vim', 'one']);" >one</a> written by Elan Ruusamäe and it was exactly what I needed. Download the latest version and put it in your ~/.vim/syntax directory. Then make the following additions to your .vimrc:
 
-<pre>au BufRead,BufNewFile *.vcl :set ft=vcl
+{% highlight vim %}
+au BufRead,BufNewFile *.vcl :set ft=vcl
 au! Syntax vcl source ~/.vim/syntax/vcl.vim
-</pre>
+{% endhighlight %}
 
 Now I can enjoy syntax highlighting when ripping through example code like I would most other things I edit with VIM.
 

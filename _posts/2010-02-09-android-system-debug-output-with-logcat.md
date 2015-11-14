@@ -19,9 +19,10 @@ I&#8217;ve been asked many times how one might get some logging information when
 
 I&#8217;d write more on this, but Google has done an excellent job with the documentation. The only thing I would stress is getting very familiar with filtering log output. It will save you a lot of time if you know exactly what you&#8217;re looking for. Another tip that&#8217;s hidden at the bottom of the documentation is that by default, **stdout** and **stderr** are redirected to **/dev/null**. You can redirect them for visibility in logcat by doing the following:
 
-<pre>$ adb shell stop
+{% highlight bash %}
+$ adb shell stop
 $ adb shell setprop log.redirect-stdio true
 $ adb shell start
-</pre>
+{% endhighlight %}
 
 You can also set this by default in **/data/local.prop**.

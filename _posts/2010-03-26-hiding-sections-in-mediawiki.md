@@ -21,7 +21,8 @@ I won&#8217;t go into the specifics of setting up jQuery on MediaWiki, but you c
 
   * For the skin you are using, edit the ** /<path to mediawiki install>/skins/<skin name>.php** file 
       * After the **</body>** tag and after your script tags for including jQuery, add the following: </ul> 
-        <pre>&lt;script&gt;
+      {% highlight javascript %}
+        <script>
     $(":header>span.mw-headline").click( function() {
         var $start = $(":header").index($(this).parent());
         var $end   = $start + 1;
@@ -29,8 +30,8 @@ I won&#8217;t go into the specifics of setting up jQuery on MediaWiki, but you c
         $(":header").eq($start).nextAll().not(":header").toggle();
         $(":header").eq($end).nextAll().not(":header").toggle();
     });
-&lt;/script&gt;
-</pre>
+</script>
+      {% endhighlight %}
         
         And that&#8217;s it! The reason we look for the span with a class of &#8220;mw-headline&#8221; is because of the &#8220;Edit&#8221; section buttons. If we look for just the header, you&#8217;ll wind up catching the Edit button and if you try to click the Edit link you&#8217;ll actually toggle the section instead. This is also why we we get the index of *$(this).parent()*. Since we clicked on an element inside the header, we don&#8217;t want to use the index of that element otherwise it won&#8217;t toggle everything correctly. 
         

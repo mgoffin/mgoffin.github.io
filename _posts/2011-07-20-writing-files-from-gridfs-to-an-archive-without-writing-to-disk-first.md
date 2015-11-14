@@ -20,7 +20,8 @@ I came across a situation where I needed to generate a <a href="http://bzip.org/
 
 Luckily there is <a href="http://docs.python.org/library/stringio.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://docs.python.org/library/stringio.html', 'StringIO']);" >StringIO</a>. Using this in combination with tarfile&#8217;s <a href="http://docs.python.org/library/tarfile.html#tarinfo-objects" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://docs.python.org/library/tarfile.html#tarinfo-objects', 'TarInfo']);" >TarInfo</a> object, this became a very easy task to accomplish:
 
-<pre>import tarfile
+{% highlight python %}
+import tarfile
 import time
 from StringIO import StringIO
 
@@ -31,6 +32,6 @@ for file in gridfs_files:
     info.size = len(file.data)
     tar.addfile(info, StringIO(file.data))
 tar.close()
-</pre>
+{% endhighlight %}
 
 The basic idea is you use TarInfo to specify the filename, size, modified time (this is important otherwise tar will complain when the date is older than <a href="http://en.wikipedia.org/wiki/Epoch_(reference_date)" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://en.wikipedia.org/wiki/Epoch_(reference_date)', 'epoch']);" >epoch</a>), etc. You use StringIO to turn your data into an object tarfile will accept, and you use the two to add the file to the archive. This works really well, except for one issue that I am still working on. If you bunzip2 the compressed archive, and then attempt to do a **tar -t** on it, it hangs and does nothing. It&#8217;s possible that gnu tar has a problem, or that the way tarfile is creating the file isn&#8217;t correct, but it does decompress and explode properly which is the important part!

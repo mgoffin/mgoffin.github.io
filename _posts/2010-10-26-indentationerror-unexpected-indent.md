@@ -20,19 +20,22 @@ Python is very picky about spacing and indentation since it&#8217;s used to dete
 
 When dealing with <a href="http://git-scm.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://git-scm.com/', 'Git']);" >Git</a>, and having several people committing code to a similar script or project, you are bound to run into situations where tabstops and shiftwidths are in conflict. It may look like all of the code lines up visually, but where one person uses spaces, another may have used actual tabs. Then you notice they made over 100 changes to the code you&#8217;re working on, and there&#8217;s tabs and spaces mixed all over the place. You have the following in your **.vimrc**:
 
-<pre>set expandtab
+{% highlight vim %}
+set expandtab
 set tabstop=4
 set shiftwidth=4
-</pre>
+{% endhighlight %}
 
 It would be great to fix all of the tabs and spaces to be the same. Now what? VIM to the rescue! Bare with me, this is a bit complicated. Once you open the file in VIM, execute the following:
 
-<pre>:%retab
-</pre>
+{% highlight vim %}
+:%retab
+{% endhighlight %}
 
 You&#8217;re done, by the way. This uses your settings, and converts all of the tabs to the settings in your **.vimrc**. Now your entire file is standardized as far as your spacing goes and you can say goodbye to your unexpected indent errors. If you find yourself having to do this often, you can bind a key to automagically make the changes for you by adding this into your **.vimrc** (using F2 in this example):
 
-<pre>map &lt;F2&gt; :retab &lt;CR&gt; :wq! &lt;CR&gt;
-</pre>
+{% highlight vim %}
+map <F2> :retab <CR> :wq! <CR>
+{% endhighlight %}
 
 This will convert all of the tabs to spaces and save the file for you. Enjoy!
