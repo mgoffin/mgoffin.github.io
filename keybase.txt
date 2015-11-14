@@ -1,0 +1,73 @@
+https://keybase.io/mgoffin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mgoffin.github.io
+  * I am mgoffin (https://keybase.io/mgoffin) on keybase.
+  * I have a public key with fingerprint 7B16 1C21 2C0C B829 46DF  B7CF EDC6 601C 0028 ABB1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.8.23"
+        },
+        "key": {
+            "eldest_kid": "0101d93f5f465050648f92fda34e9433a7ca7d4e305a6ca502a973518b3e8145baf80a",
+            "fingerprint": "7b161c212c0cb82946dfb7cfedc6601c0028abb1",
+            "host": "keybase.io",
+            "key_id": "edc6601c0028abb1",
+            "kid": "0101d93f5f465050648f92fda34e9433a7ca7d4e305a6ca502a973518b3e8145baf80a",
+            "uid": "495b6513a02274d0eeed148d3120c519",
+            "username": "mgoffin"
+        },
+        "service": {
+            "hostname": "mgoffin.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1447510731,
+    "expire_in": 157680000,
+    "prev": "56f9f0926a9e30fa5c11897d9f3b6968387e211fd7109fb316e6c6dbc5ddc701",
+    "seqno": 29,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkm1QVFUYx5dXEYYEsxLEAa+MktByz32/gNWosaQzKpCYjLncl3OXC+su7F6W
+dgxGk2ldB50cIsUZJDTZGfAD+MIQClkykIosZRBI7uALMlJoMBVQk3Uv2TTO9LHz
+6cw5v+f//J//OR+GB+hC/Ca782J0CU0tftcf8rocw7rrexDeKjqRlD2IYJahRdF2
+Fm43RFKQQujkOTvUy9Y4i1WE+gJ73FMmCXFAm122WlQK1TN6DEfKkjReq4ZmEdoV
+Y6EsarcABSKLS6REUCRKohTBSCwmiRxOQJbAcY4WOFokII6SHCVwJIpxLI2TgOFx
+yACC5DmJQTm1oSRbTNBWZJM1iwjNAwoIGMAEVOAZjCUoUeJpQYKiQFEoEFAUYzie
+B2phvtWuPDMMMu/UOG/vP/j/2XfJvBzBkjxFApxDMYwmRBRCKAKCEXGAoQIJWA20
+Q9vT4HebrJI6r5apeuiQBajlqg3yLKA3yUp+Cf/3TEU2q2IVrGb1Ol9RiuwpWrni
+LNL4UsgbnyoZedkiqlkiSbX/PiJQUUGRNW1AEDQJUBoHSQh8t0i2QaOsESRNMai6
+tEbQoWqSlMRKKItRHKumIHGkAADD0iIr4TzFUgzO0BADQBJpgLISjwMKUgIl8gIp
+igKNalHbYbHFiqRgrGqUM6madtlk4ZQSG0TK3P4xgTq/EF1wkL/2TXWhCyP++buT
+nyz6UwhsiPVAady381RL9K1Ob/l3v2dvrDnyWfqxS6/EfXU3c1fBhC/qQOGC6J7G
+4UZibqrqXK5beeOLoaABccI/2zwdMPSjt6cysSOxnlmTlpVf3bsto/rFg1mLTvt9
+0IXcmJto7/olU4/d3rB/javX7ZzZcdZ7ofJXl9DUl5FYfCFsrO97b8njb3XZW1fW
+NNqOtm1Ye/tOe0Vd/fMMcsYauyX0Gt5yd/NI3zLfyL32juTq0b2BW090XF7y5uvc
+lF9H8uSDnuVnw9cWGhxfRksrZnYkj3zjzcm8ePGF0pdXeyLOnwv1vHR5tSWjOe/n
+Bpe5qyq2fHtweujKqVnHpubFq1pf7Y9vu+Sy3fwjoYvgc8aqaq/FPwkLfrttIX38
+c2NP2Jh/zv0KKXXLR7ylcEV95pObhxs9owGG+2W+Bc0drkeDPbUB7opo4QdjTOpb
+R6XWXb3nj7tP6cIDG35LW+I7XbIsOmtg7uqjlOEZhnOE3NKXeeuGTIN3Zm9kbTpj
+iDjZPXBsX2Nk7QNTcmQ/nrY/uC1qkile6roX5kzgh7Z92vl+/HLPZuesuesn79z6
+1+pmr3gM3Ufcrc+VRh6yHd5Y+ZAIHt37depoZM3i3pDttUHi42EHbZosVzq7Yq+k
+x1SfyF2VOL5+2p7bMHiyafpA/1K3z0ALEfui8t4bTv9453jI1cSC0IPr3unz/AU=
+=GyTZ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mgoffin
