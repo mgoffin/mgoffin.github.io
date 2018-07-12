@@ -34,7 +34,7 @@ To help facilitate such an impact assessment, but more importantly to provide a 
 <a href="http://mgoffin.github.io/images/tact.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://mgoffin.github.io/images/tact.png', '']);" target="_blank"><img src="http://mgoffin.github.io/images/tact_small.png" alt="Figure 1: Task Analysis for Cyber Threats (TACT) diagram" /></a>  
 **Figure 1: Task Analysis for Cyber Threats (TACT) diagram**
 
-**Differentiate the tasks to find the tools **
+**Differentiate the tasks to find the tools**
 
 The TACT Diagram has four sections that represent monitoring and response activities. Each group of tasks are usually performed for that given phase of M&R (i.e., Pre-incident, Incident Response, Digital Forensics, Post-Mortem).; however, the tasks are loosely ordered and can be performed out-of-order, in serial, in parallel, in conjunction with other tasks, including task from other phases. The order is entirely dependent on the evolving situations we, as cyber defenders, find ourselves in. 
 
