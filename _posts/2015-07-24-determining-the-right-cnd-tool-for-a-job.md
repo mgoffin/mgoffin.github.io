@@ -40,7 +40,7 @@ The TACT Diagram has four sections that represent monitoring and response activi
 
 Each task in the diagram is a point within which simplicity or complexity of execution is indeterminate: sometimes there are no tools to assist in performing the task, and other times, one or more tools are necessary to complete the work. The TACT diagram can help you address the gamut of tasking your cyber operations undertakes, so that you can then determine what tools you currently have, and find gaps in coverage, but also to identify efficiency problems as you interrelate tasks around the ring.
 
-**Assessing the tools **
+**Assessing the tools**
 
 When it comes to finding the right tool for a task, approach it like you have a job opening and the tool is applying to fill the position. Just like employment, a tool opening comes about because:
 
@@ -60,7 +60,7 @@ Next, consider the complexity of a task. For these, it may be necessary to have 
 
 This methodology review of tasks in your SOC’s M&R should produce a nice list of needs with which to begin the tool “interviews”: requirements, interfaces, expected outcome and performance, etc. Armed with your tasks and needs, reviewing any externally developed tool, whether it’s COTS or freeware, will help you determine if the right tool is available or needs to be built in-house. Also, just as you would when interviewing someone for a job, contact other organizations for references about their experiences using the tool, which will give you a better idea about if it has performed as expected. And be sure the analysts who will be using the tool are a part of its acquisition or creation. Many tools fail because the people who are suppose to use them can’t or won’t.
 
-**An example: the “answer” is tool replacement **
+**An example: the “answer” is tool replacement**
 
 Let&#8217;s take a look at an example using the &#8220;Isolate and Decode Network Traffic&#8221; Task. Several years ago some fellow CND-ers and I concluded that our solution (i.e., one-off scripts) for decoding network traffic had become too unwieldy. Code was being duplicated, re-implemented, and scattered across host systems. We identified this Task as an inefficient cog in our overall forensics processes. For a solution, we first determined our big-picture requirements: (1) allow us to develop a decoder in a centralized location for which everyone on the SOC team had access; (2) our process of developing a decoder needed to be quick, simple, with commonly duplicated code abstracted; (3) not cause us to use a different development language because all of our existing decoders had been written in Python; (4) allow us to create modular decoders to allow &#8220;plug and play;&#8221; and (5) enable us to develop shareable modules. Armed with these requirements, we “interviewed” a number of closed and open source tools but found none that fit well with our requirements. For our optimal solution we concluded we had to develop it in-house: the result was that our developers and analysts created what became <a href="https://github.com/MITRECND/chopshop" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/MITRECND/chopshop', 'Chopshop']);" target="_blank">Chopshop</a>.
 
