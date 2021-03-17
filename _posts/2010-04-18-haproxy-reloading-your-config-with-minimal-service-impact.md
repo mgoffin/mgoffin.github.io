@@ -10,15 +10,15 @@ tt_auto_tweet_text:
   - 'New blog post: [TITLE] [URL]'
   - 'New blog post: [TITLE] [URL]'
 tweet_this_url:
-  - http://is.gd/FCO5TO
+  - https://is.gd/FCO5TO
 categories:
   - General
 tags:
   - haproxy
 ---
-<a href="http://haproxy.1wt.eu/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://haproxy.1wt.eu/', 'HAProxy']);" >HAProxy</a> is a high performance load balancer. It is very light-weight, and free, making it a great option if you are in the market for a load balancer and need to keep your costs down. 
+<a href="https://haproxy.1wt.eu/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://haproxy.1wt.eu/', 'HAProxy']);" >HAProxy</a> is a high performance load balancer. It is very light-weight, and free, making it a great option if you are in the market for a load balancer and need to keep your costs down. 
 
-Lately we've been making a lot of load balancer changes at work to accommodate new systems and services. Even though we have two load balancers running with <a href="http://www.keepalived.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.keepalived.org/', 'keepalived']);" >keepalived</a> taking care of any failover situations, I was thinking about how we go about reloading our configuration files. In the event of a change, the &#8220;common&#8221; way to get the changes to take effect is to run **/etc/init.d/haproxy restart**. This is bad for a couple major reasons:
+Lately we've been making a lot of load balancer changes at work to accommodate new systems and services. Even though we have two load balancers running with <a href="https://www.keepalived.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.keepalived.org/', 'keepalived']);" >keepalived</a> taking care of any failover situations, I was thinking about how we go about reloading our configuration files. In the event of a change, the &#8220;common&#8221; way to get the changes to take effect is to run **/etc/init.d/haproxy restart**. This is bad for a couple major reasons:
 
   1. You are temporarily shutting your load balancer down
   2. You are severing any current connections going through the load balancer

@@ -4,7 +4,7 @@ author: Michael Goffin
 layout: post
 permalink: /2014/06/24/crits-authentication/
 tweet_this_url:
-  - http://is.gd/ZIDGKd
+  - https://is.gd/ZIDGKd
 categories:
   - General
 ---
@@ -23,7 +23,7 @@ For web and command-line authentication, the CRITs admin has the choice of forci
 When discussing the pros and cons of authentication two things came up:
 
   1. Brute-force lockout of accounts.
-  2. <a href="http://tools.ietf.org/html/rfc6238" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://tools.ietf.org/html/rfc6238', 'Window of attack']);" >Window of attack</a> for TOTP.
+  2. <a href="https://tools.ietf.org/html/rfc6238" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://tools.ietf.org/html/rfc6238', 'Window of attack']);" >Window of attack</a> for TOTP.
 
 When thinking about these issues, we decided we wanted to focus on increasing the duration of time it would take an attacker to brute-force lockout an account and limit the window of attack for TOTP. 
 

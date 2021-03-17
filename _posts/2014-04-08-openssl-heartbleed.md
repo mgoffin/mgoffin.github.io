@@ -4,7 +4,7 @@ author: Michael Goffin
 layout: post
 permalink: /2014/04/08/openssl-heartbleed/
 tweet_this_url:
-  - http://is.gd/9Amle9
+  - https://is.gd/9Amle9
 categories:
   - OpenSSL
   - Python
@@ -12,7 +12,7 @@ tags:
   - OpenSSL
   - Python
 ---
-People are hard at work today patching <a href="https://www.openssl.org/‎" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.openssl.org/‎', 'OpenSSL']);" >OpenSSL</a> due to the <a href="http://heartbleed.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://heartbleed.com/', 'Heartbleed']);" >Heartbleed</a> bug (CVE-2014-0160). 
+People are hard at work today patching <a href="https://www.openssl.org/‎" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.openssl.org/‎', 'OpenSSL']);" >OpenSSL</a> due to the <a href="https://heartbleed.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://heartbleed.com/', 'Heartbleed']);" >Heartbleed</a> bug (CVE-2014-0160). 
 
 There&#8217;s tons of information pouring out as package repositories are rapidly updating to the latest OpenSSL 1.0.1g release that came out yesterday. If you want to see if your server is vulnerable, you can run this:
 

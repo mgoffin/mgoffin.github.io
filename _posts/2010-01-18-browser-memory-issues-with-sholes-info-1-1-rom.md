@@ -8,13 +8,13 @@ tt_auto_tweet:
 tt_auto_tweet_text:
   - 'New blog post: [TITLE] [URL]'
 tweet_this_url:
-  - http://is.gd/1qRqU1
+  - https://is.gd/1qRqU1
 categories:
   - Android
 tags:
   - Android
 ---
-With the release of the <a href="http://www.sholes.info/2010/01/16/2-0-1-sholes-info-edition-1-1-release/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.sholes.info/2010/01/16/2-0-1-sholes-info-edition-1-1-release/', 'Sholes.info 1.1 ROM']);" >Sholes.info 1.1 ROM</a> for the Droid, there&#8217;s been some concern over performance issues as the phone&#8217;s uptime increases. It seems one problem is that the browser will continue to chew on memory, and with compcache setup in this ROM, it chews through the swap as well. If you are enjoying the features and functionality of the 1.1 ROM, but would like to disable compcache to help limit the browser&#8217;s memory consumption and try to keep your phone alive a bit longer, there is a way to disable it:
+With the release of the <a href="https://www.sholes.info/2010/01/16/2-0-1-sholes-info-edition-1-1-release/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.sholes.info/2010/01/16/2-0-1-sholes-info-edition-1-1-release/', 'Sholes.info 1.1 ROM']);" >Sholes.info 1.1 ROM</a> for the Droid, there&#8217;s been some concern over performance issues as the phone&#8217;s uptime increases. It seems one problem is that the browser will continue to chew on memory, and with compcache setup in this ROM, it chews through the swap as well. If you are enjoying the features and functionality of the 1.1 ROM, but would like to disable compcache to help limit the browser&#8217;s memory consumption and try to keep your phone alive a bit longer, there is a way to disable it:
 
 {% highlight bash %}
 [root@droid] / # sysrw && mkdir -p /system/etc/rc.d/ && touch /system/etc/rc.d/disable_15_compcache.sh; sysro; sync

@@ -4,7 +4,7 @@ author: Michael Goffin
 layout: post
 permalink: /2011/01/27/shmoocon-2011-it-begins/
 tweet_this_url:
-  - http://is.gd/xDkHIV
+  - https://is.gd/xDkHIV
 categories:
   - ShmooCon
 tags:

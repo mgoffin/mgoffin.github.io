@@ -10,16 +10,16 @@ tt_auto_tweet_text:
   - 'New blog post: [TITLE] [URL]'
   - 'New blog post: [TITLE] [URL]'
 tweet_this_url:
-  - http://is.gd/FynnNa
+  - https://is.gd/FynnNa
 categories:
   - General
 tags:
   - haproxy
   - socat
 ---
-We use <a href="http://www.zabbix.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.zabbix.com/', 'Zabbix']);" >Zabbix</a> to monitor our systems at work. It's a great open source alternative. One of things I've been working on recently is auditing our monitoring system for defunct monitoring points, unmonitored services, and proper triggers and alerts based on our SLA requirements. <a href="http://haproxy.1wt.eu/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://haproxy.1wt.eu/', 'HAProxy']);" >HAProxy</a> was one of those items. 
+We use <a href="https://www.zabbix.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.zabbix.com/', 'Zabbix']);" >Zabbix</a> to monitor our systems at work. It's a great open source alternative. One of things I've been working on recently is auditing our monitoring system for defunct monitoring points, unmonitored services, and proper triggers and alerts based on our SLA requirements. <a href="https://haproxy.1wt.eu/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://haproxy.1wt.eu/', 'HAProxy']);" >HAProxy</a> was one of those items. 
 
-There are standard monitoring points like PID changes, web interface availability, CPU/Memory usage, etc. But what about monitoring things like MAXCONN and CURCONNS? Turns out there's a way to get this data from HAProxy using what they call a "stats socket." This information isn't found in the **haproxy-en.txt** file, but in the **configuration.txt** file. In my installation, it isn't in **/usr/share/doc/haproxy** like everything else. I actually found this on the official <a href="http://haproxy.1wt.eu/download/1.4/doc/configuration.txt" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://haproxy.1wt.eu/download/1.4/doc/configuration.txt', 'website']);" >website</a>. Here's the interesting bit:
+There are standard monitoring points like PID changes, web interface availability, CPU/Memory usage, etc. But what about monitoring things like MAXCONN and CURCONNS? Turns out there's a way to get this data from HAProxy using what they call a "stats socket." This information isn't found in the **haproxy-en.txt** file, but in the **configuration.txt** file. In my installation, it isn't in **/usr/share/doc/haproxy** like everything else. I actually found this on the official <a href="https://haproxy.1wt.eu/download/1.4/doc/configuration.txt" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://haproxy.1wt.eu/download/1.4/doc/configuration.txt', 'website']);" >website</a>. Here's the interesting bit:
 
 {% highlight bash %}
 > stats socket <path> [{uid | user} <uid>] [{gid | group} <gid>] [mode <mode>]  
@@ -64,7 +64,7 @@ global
         stats socket    /tmp/haproxy
 {% endhighlight %}
 
-and you should now see a socket setup in **/tmp** (note in the <a href="http://www.freebsd.org/cgi/man.cgi?query=ls" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.freebsd.org/cgi/man.cgi?query=ls', 'ls']);" >ls</a> output that the "s" at the beginning of the permission set denotes the file type as a socket):
+and you should now see a socket setup in **/tmp** (note in the <a href="https://www.freebsd.org/cgi/man.cgi?query=ls" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.freebsd.org/cgi/man.cgi?query=ls', 'ls']);" >ls</a> output that the "s" at the beginning of the permission set denotes the file type as a socket):
 
 {% highlight bash %}
 # ls -lah /tmp/haproxy
@@ -72,7 +72,7 @@ srwxr-xr-x 1 root root 0 2010-07-14 12:53 /tmp/haproxy
 #
 {% endhighlight %}
 
-Now we can query HAProxy using this socket for some stats. A great way to do this is using <a href="http://www.dest-unreach.org/socat/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.dest-unreach.org/socat/', 'socat']);" >socat</a>. If you don't have it installed, you can compile from <a href="http://www.dest-unreach.org/socat/download/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.dest-unreach.org/socat/download/', 'source']);" >source</a>, or use the package management system for your OS (ex: "apt-get install socat" for Ubuntu). 
+Now we can query HAProxy using this socket for some stats. A great way to do this is using <a href="https://www.dest-unreach.org/socat/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.dest-unreach.org/socat/', 'socat']);" >socat</a>. If you don't have it installed, you can compile from <a href="https://www.dest-unreach.org/socat/download/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.dest-unreach.org/socat/download/', 'source']);" >source</a>, or use the package management system for your OS (ex: "apt-get install socat" for Ubuntu). 
 
 To query for some stats, you can try the following commands:
 

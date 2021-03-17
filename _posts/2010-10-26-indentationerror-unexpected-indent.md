@@ -4,7 +4,7 @@ author: Michael Goffin
 layout: post
 permalink: /2010/10/26/indentationerror-unexpected-indent/
 tweet_this_url:
-  - http://is.gd/u0j73d
+  - https://is.gd/u0j73d
 categories:
   - Git
   - Python
@@ -14,11 +14,11 @@ tags:
   - Python
   - VIM
 ---
-Tabs and spaces are code killers, visually and syntactically. Dealing with Python, you might see the error in the title often when sharing code with others. Focusing on <a href="http://www.vim.org" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.vim.org', 'VIM']);" >VIM</a>, people love to setup their rcfile so they get the most out of what VIM has to offer, but also makes their code easy to write and easy to read. Unfortunately, many times it&#8217;s just easy to read for them and no one else. 
+Tabs and spaces are code killers, visually and syntactically. Dealing with Python, you might see the error in the title often when sharing code with others. Focusing on <a href="https://www.vim.org" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.vim.org', 'VIM']);" >VIM</a>, people love to setup their rcfile so they get the most out of what VIM has to offer, but also makes their code easy to write and easy to read. Unfortunately, many times it&#8217;s just easy to read for them and no one else. 
 
 Python is very picky about spacing and indentation since it&#8217;s used to determine the flow of your script or program. Miss a tab or series of spaces somewhere and all the sudden you are executing code that&#8217;s not inside the **if** statement you just made, or you&#8217;ll get errors like above because your code just flat out fails. 
 
-When dealing with <a href="http://git-scm.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://git-scm.com/', 'Git']);" >Git</a>, and having several people committing code to a similar script or project, you are bound to run into situations where tabstops and shiftwidths are in conflict. It may look like all of the code lines up visually, but where one person uses spaces, another may have used actual tabs. Then you notice they made over 100 changes to the code you&#8217;re working on, and there&#8217;s tabs and spaces mixed all over the place. You have the following in your **.vimrc**:
+When dealing with <a href="https://git-scm.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://git-scm.com/', 'Git']);" >Git</a>, and having several people committing code to a similar script or project, you are bound to run into situations where tabstops and shiftwidths are in conflict. It may look like all of the code lines up visually, but where one person uses spaces, another may have used actual tabs. Then you notice they made over 100 changes to the code you&#8217;re working on, and there&#8217;s tabs and spaces mixed all over the place. You have the following in your **.vimrc**:
 
 {% highlight vim %}
 set expandtab

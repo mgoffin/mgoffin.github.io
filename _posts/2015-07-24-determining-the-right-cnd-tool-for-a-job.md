@@ -4,7 +4,7 @@ author: Michael Goffin
 layout: post
 permalink: /2015/07/24/determining-the-right-cnd-tool-for-a-job/
 tweet_this_url:
-  - http://is.gd/KuN4W0
+  - https://is.gd/KuN4W0
 categories:
   - Chopshop
   - CND
@@ -31,7 +31,7 @@ I’ve spent time reviewing the general tasks performed on a regular basis in ac
 
 To help facilitate such an impact assessment, but more importantly to provide a “big picture” view of incident response tasks for which tools could be a differentiator, I created a ring diagram that generalizes the tasks and groups them by the M&R life cycle. See Figure 1: Task Analysis for Cyber Threats (TACT) diagram.
 
-<a href="http://mgoffin.github.io/images/tact.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://mgoffin.github.io/images/tact.png', '']);" target="_blank"><img src="http://mgoffin.github.io/images/tact_small.png" alt="Figure 1: Task Analysis for Cyber Threats (TACT) diagram" /></a>  
+<a href="https://mgoffin.github.io/images/tact.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://mgoffin.github.io/images/tact.png', '']);" target="_blank"><img src="https://mgoffin.github.io/images/tact_small.png" alt="Figure 1: Task Analysis for Cyber Threats (TACT) diagram" /></a>  
 **Figure 1: Task Analysis for Cyber Threats (TACT) diagram**
 
 **Differentiate the tasks to find the tools**

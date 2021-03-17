@@ -10,7 +10,7 @@ tt_auto_tweet_text:
   - 'New blog post: [TITLE] [URL]'
   - 'New blog post: [TITLE] [URL]'
 tweet_this_url:
-  - http://is.gd/AWhQu4
+  - https://is.gd/AWhQu4
 categories:
   - General
 tags:

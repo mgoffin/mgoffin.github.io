@@ -10,7 +10,7 @@ tt_auto_tweet_text:
   - 'New blog post: [TITLE] [URL]'
   - 'New blog post: [TITLE] [URL]'
 tweet_this_url:
-  - http://is.gd/OduRs5
+  - https://is.gd/OduRs5
 categories:
   - Git
   - Ruby

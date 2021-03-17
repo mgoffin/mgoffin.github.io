@@ -8,7 +8,7 @@ tt_auto_tweet:
 tt_auto_tweet_text:
   - 'New blog post: [TITLE] [URL]'
 tweet_this_url:
-  - http://is.gd/SRNkt6
+  - https://is.gd/SRNkt6
 categories:
   - Android
   - DroidMod

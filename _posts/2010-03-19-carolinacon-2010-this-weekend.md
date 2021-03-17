@@ -4,7 +4,7 @@ author: Michael Goffin
 layout: post
 permalink: /2010/03/19/carolinacon-2010-this-weekend/
 tweet_this_url:
-  - http://is.gd/m20WVq
+  - https://is.gd/m20WVq
 categories:
   - CarolinaCon
 tags:

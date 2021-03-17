@@ -8,7 +8,7 @@ tt_auto_tweet:
 tt_auto_tweet_text:
   - 'New blog post: [TITLE] [URL]'
 tweet_this_url:
-  - http://is.gd/G7HLCv
+  - https://is.gd/G7HLCv
 categories:
   - General
 tags:
@@ -16,4 +16,4 @@ tags:
 ---
 I was graced by Heidi and given a link to quite possibly some of the most amazing CG I&#8217;ve seen recently. It is absolutely stunning. I recommend watching it in full-screen. 
 
-<a href="http://www.vimeo.com/7809605" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.vimeo.com/7809605', 'The Third &#038; The Seventh']);" >The Third & The Seventh</a>
+<a href="https://www.vimeo.com/7809605" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.vimeo.com/7809605', 'The Third &#038; The Seventh']);" >The Third & The Seventh</a>

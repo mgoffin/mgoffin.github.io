@@ -4,7 +4,7 @@ author: Michael Goffin
 layout: post
 permalink: /2012/05/09/zsh-command-history-cursor-at-the-end-of-the-line/
 tweet_this_url:
-  - http://is.gd/Nd7maS
+  - https://is.gd/Nd7maS
 categories:
   - Debian
   - ZSH
@@ -12,9 +12,9 @@ tags:
   - Debian
   - ZSH
 ---
-About five or so years ago, Debian decided to mess with their <a href="http://www.zsh.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.zsh.org/', 'ZSH']);" >ZSH</a> package. One of the things that changed is the cursor location when browsing your command history. On every other OS, when you browse your command history, whether in vi mode (viins or vicmd) or in emacs mode, the cursor always goes to the end of the command. Debian decided to change it so that it goes to the beginning of the line. WTF! 
+About five or so years ago, Debian decided to mess with their <a href="https://www.zsh.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.zsh.org/', 'ZSH']);" >ZSH</a> package. One of the things that changed is the cursor location when browsing your command history. On every other OS, when you browse your command history, whether in vi mode (viins or vicmd) or in emacs mode, the cursor always goes to the end of the command. Debian decided to change it so that it goes to the beginning of the line. WTF! 
 
-This isn&#8217;t a huge change, but when you are going back and forth between systems all day and the same action has different results, it can get pretty infuriating. There was really no need to change this whatsoever. Unfortunately, the <a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=383737" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=383737', 'stance']);" >stance</a> they have is:
+This isn&#8217;t a huge change, but when you are going back and forth between systems all day and the same action has different results, it can get pretty infuriating. There was really no need to change this whatsoever. Unfortunately, the <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=383737" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=383737', 'stance']);" >stance</a> they have is:
 
 {% raw %}
 > tag 383737 + wontfix  
@@ -26,7 +26,7 @@ This isn&#8217;t a huge change, but when you are going back and forth between sy
 
 Essentially, they decided to make the change to be non-compliant with the rest of the ZSH community, and then call it a binary division as an excuse for their change. Nice. 
 
-The issue manifested because they decided to put values in the global **/etc/zsh/zshrc** which causes this behavior. There&#8217;s horrible hacks you can do in your personal **.zshrc** to sort of fix the functionality, or if you have sudo on the box you can change the behavior for everyone by altering the global rc file. However, there is a much easier way shown to me by **<a href="http://www.zi0r.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.zi0r.com', 'zi']);" >zi</a>**. I hadn&#8217;t seen this solution anywhere I searched so I thought I&#8217;d write it up for anyone who wants a clean fix:
+The issue manifested because they decided to put values in the global **/etc/zsh/zshrc** which causes this behavior. There&#8217;s horrible hacks you can do in your personal **.zshrc** to sort of fix the functionality, or if you have sudo on the box you can change the behavior for everyone by altering the global rc file. However, there is a much easier way shown to me by **<a href="https://www.zi0r.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://www.zi0r.com', 'zi']);" >zi</a>**. I hadn&#8217;t seen this solution anywhere I searched so I thought I&#8217;d write it up for anyone who wants a clean fix:
 
 {% highlight bash %}
 % echo 'unsetopt global_rcs' >> ~/.zprofile
