@@ -52,9 +52,16 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $.getJSON('rotes.json', function(json) {
-            console.log(json);
-        })
+        const jsonData = null;
+        fetch('rotes.json')
+            .then(response => response.json())
+            .then(data => {
+                jsonData = data;
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
 
         function populateTable(data) {
             const tableBody = $('#dataTable');
