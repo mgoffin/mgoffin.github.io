@@ -74,15 +74,17 @@
                     tableBody.append(row);
                 });
             }
-    
+
+            // This needs to allow for the filtering to be done as an Integer
+            // The Integer entered needs to be a <= comparison.
             function filterTable() {
                 const formValues = {};
                 $('#filterForm').serializeArray().forEach(input => {
-                    if (input.value) formValues[input.name] = input.value.toLowerCase();
+                    if (input.value) formValues[input.name] = parseInt(input.value.toLowerCase());
                 });
                 const filteredData = jsonData.filter(item => {
                     return Object.entries(formValues).every(([key, value]) =>
-                        item[key] && item[key].toString().toLowerCase().includes(value));
+                        item[key] && parseInt(item[key].toString().toLowerCase()) <= value;
                 });
                 populateTable(filteredData);
             }
