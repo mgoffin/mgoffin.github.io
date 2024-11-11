@@ -52,6 +52,16 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        var jsonData;
+        fetch('rotes.json')
+            .then(res => res.json())
+            .then(data => {
+                jsonData = data;
+            })
+            .then(() => {
+                console.log(jsonData);
+            });
+
         function populateTable(data) {
             const tableBody = $('#dataTable');
             tableBody.empty(); // Clear previous rows
@@ -86,15 +96,7 @@
         }
 
         $(document).ready(function() {
-            fetch('rotes.json')
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    populateTable(jsonData); // Initial population of the table
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
+            populateTable(jsonData); // Initial population of the table
         });
     </script>
 </body>
