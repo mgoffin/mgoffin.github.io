@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Data Table</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        input, button { padding: 8px; }
+    </style>
+</head>
+<body>
+    <h2>Filter Table</h2>
+    <form id="filterForm">
+        <input type="text" placeholder="Rote" name="rote">
+        <input type="text" placeholder="Correspondence" name="Correspondence">
+        <input type="text" placeholder="Entropy" name="Entropy">
+        <input type="text" placeholder="Forces" name="Forces">
+        <input type="text" placeholder="Life" name="Life">
+        <input type="text" placeholder="Matter" name="Matter">
+        <input type="text" placeholder="Mind" name="Mind">
+        <input type="text" placeholder="Prime" name="Prime">
+        <input type="text" placeholder="Spirit" name="Spirit">
+        <input type="text" placeholder="Time" name="Time">
+        <!-- Add other fields as necessary -->
+        <button type="button" onclick="filterTable()">Apply Filter</button>
+    </form>
+
+    <h2>Dynamic Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Rote</th>
+                <th>Life</th>
+                <th>Prime</th>
+                <th>Entropy</th>
+                <th>Forces</th>
+                <th>Matter</th>
+                <th>Time</th>
+                <th>Mind</th>
+                <th>Correspondence</th>
+                <th>Spirit</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+            <!-- Data rows will go here -->
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $.getJSON('rotes.json', function(json) {
+            console.log(json);
+        })
+
+        function populateTable(data) {
+            const tableBody = $('#dataTable');
+            tableBody.empty(); // Clear previous rows
+            data.forEach(item => {
+                let row = `<tr>`;
+                row += `<td>${item.rote || ''}</td>`;
+                row += `<td>${item.Life || ''}</td>`;
+                row += `<td>${item.Prime || ''}</td>`;
+                row += `<td>${item.Entropy || ''}</td>`;
+                row += `<td>${item.Forces || ''}</td>`;
+                row += `<td>${item.Matter || ''}</td>`;
+                row += `<td>${item.Time || ''}</td>`;
+                row += `<td>${item.Mind || ''}</td>`;
+                row += `<td>${item.Correspondence || ''}</td>`;
+                row += `<td>${item.Spirit || ''}</td>`;
+                row += `<td>${item.description || ''}</td>`;
+                row += `</tr>`;
+                tableBody.append(row);
+            });
+        }
+
+        function filterTable() {
+            const formValues = {};
+            $('#filterForm').serializeArray().forEach(input => {
+                if (input.value) formValues[input.name] = input.value.toLowerCase();
+            });
+            const filteredData = jsonData.filter(item => {
+                return Object.entries(formValues).every(([key, value]) =>
+                    item[key] && item[key].toString().toLowerCase().includes(value));
+            });
+            populateTable(filteredData);
+        }
+
+        $(document).ready(function() {
+            populateTable(jsonData); // Initial population of the table
+        });
+    </script>
+</body>
+</html>
