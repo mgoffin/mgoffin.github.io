@@ -25,7 +25,7 @@
         <input type="text" placeholder="Spirit" name="Spirit">
         <input type="text" placeholder="Time" name="Time">
         <!-- Add other fields as necessary -->
-        <button type="button" onclick="filterTable()">Apply Filter</button>
+        <button type="button" id="filterButton">Apply Filter</button>
     </form>
 
     <h2>Dynamic Table</h2>
@@ -97,6 +97,8 @@
                     console.log(jsonData);
                     populateTable(jsonData); // Initial population of the table
                 });
+
+            $("#filterButton").click(filterTable); 
         });
     </script>
 </body>
