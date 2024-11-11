@@ -26,6 +26,7 @@
         <input type="text" placeholder="Time" name="Time">
         <!-- Add other fields as necessary -->
         <button type="button" id="filterButton">Apply Filter</button>
+        <button type="button" id="clearButton">Clear Filter</button>
     </form>
 
     <h2>Dynamic Table</h2>
@@ -100,7 +101,11 @@
                     populateTable(jsonData); // Initial population of the table
                 });
 
-            $("#filterButton").click(filterTable); 
+            $("#filterButton").click(filterTable);
+            $("#clearButton").click(function (e) {
+                e.preventDefault();
+                $("#filterForm")[0].reset();
+            });
         });
     </script>
 </body>
