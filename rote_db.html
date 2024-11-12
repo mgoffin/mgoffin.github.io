@@ -148,10 +148,10 @@
                 const formValues = {};
                 $('#filterForm').serializeArray().forEach(input => {
                     if (input.value !== "") {
-                        console.log('value: ' + input.value);
                         formValues[input.name] = parseInt(input.value.toLowerCase());
                     }
                 });
+                console.print(formValues);
                 const filteredData = jsonData.filter(item => {
                     return Object.entries(formValues).every(([key, value]) =>
                         item[key] && parseInt(item[key].toString().toLowerCase()) <= value);
