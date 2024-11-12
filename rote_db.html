@@ -34,15 +34,15 @@
         <thead>
             <tr>
                 <th>Rote</th>
-                <th>Life</th>
-                <th>Prime</th>
+                <th>Correspondence</th>
                 <th>Entropy</th>
                 <th>Forces</th>
+                <th>Life</th>
                 <th>Matter</th>
-                <th>Time</th>
                 <th>Mind</th>
-                <th>Correspondence</th>
+                <th>Prime</th>
                 <th>Spirit</th>
+                <th>Time</th>
                 <th>Description</th>
             </tr>
         </thead>
@@ -61,15 +61,15 @@
                 data.forEach(item => {
                     let row = `<tr>`;
                     row += `<td>${item.rote || ''}</td>`;
-                    row += `<td>${item.Life || ''}</td>`;
-                    row += `<td>${item.Prime || ''}</td>`;
+                    row += `<td>${item.Correspondence || ''}</td>`;
                     row += `<td>${item.Entropy || ''}</td>`;
                     row += `<td>${item.Forces || ''}</td>`;
+                    row += `<td>${item.Life || ''}</td>`;
                     row += `<td>${item.Matter || ''}</td>`;
-                    row += `<td>${item.Time || ''}</td>`;
                     row += `<td>${item.Mind || ''}</td>`;
-                    row += `<td>${item.Correspondence || ''}</td>`;
+                    row += `<td>${item.Prime || ''}</td>`;
                     row += `<td>${item.Spirit || ''}</td>`;
+                    row += `<td>${item.Time || ''}</td>`;
                     row += `<td>${item.description || ''}</td>`;
                     row += `</tr>`;
                     tableBody.append(row);
