@@ -32,6 +32,15 @@
         th, td {
             padding: 12px 15px;
         }
+        .rote-name th td {
+            width: 100px;
+        }
+        .sphere th td {
+            width: 10px;
+        }
+        .rote-desc th td {
+            width: 100px;
+        }
         tbody tr {
             border-bottom: 1px solid #dddddd;
         }
@@ -72,17 +81,17 @@
     <table>
         <thead>
             <tr>
-                <th>Rote</th>
-                <th>C</th>
-                <th>E</th>
-                <th>F</th>
-                <th>L</th>
-                <th>Ma</th>
-                <th>Mi</th>
-                <th>P</th>
-                <th>S</th>
-                <th>T</th>
-                <th>Description</th>
+                <th class="rote-name">Rote</th>
+                <th class="sphere">C</th>
+                <th class="sphere">E</th>
+                <th class="sphere">F</th>
+                <th class="sphere">L</th>
+                <th class="sphere">Ma</th>
+                <th class="sphere">Mi</th>
+                <th class="sphere">P</th>
+                <th class="sphere">S</th>
+                <th class="sphere">T</th>
+                <th class="rote-desc">Description</th>
             </tr>
         </thead>
         <tbody id="dataTable">
@@ -99,17 +108,17 @@
                 tableBody.empty(); // Clear previous rows
                 data.forEach(item => {
                     let row = `<tr>`;
-                    row += `<td>${item.rote || ''}</td>`;
-                    row += `<td>${item.Correspondence || ''}</td>`;
-                    row += `<td>${item.Entropy || ''}</td>`;
-                    row += `<td>${item.Forces || ''}</td>`;
-                    row += `<td>${item.Life || ''}</td>`;
-                    row += `<td>${item.Matter || ''}</td>`;
-                    row += `<td>${item.Mind || ''}</td>`;
-                    row += `<td>${item.Prime || ''}</td>`;
-                    row += `<td>${item.Spirit || ''}</td>`;
-                    row += `<td>${item.Time || ''}</td>`;
-                    row += `<td>${item.description || ''}</td>`;
+                    row += `<td class="rote-name">${item.rote || ''}</td>`;
+                    row += `<td class="sphere">${item.Correspondence || ''}</td>`;
+                    row += `<td class="sphere">${item.Entropy || ''}</td>`;
+                    row += `<td class="sphere">${item.Forces || ''}</td>`;
+                    row += `<td class="sphere">${item.Life || ''}</td>`;
+                    row += `<td class="sphere">${item.Matter || ''}</td>`;
+                    row += `<td class="sphere">${item.Mind || ''}</td>`;
+                    row += `<td class="sphere">${item.Prime || ''}</td>`;
+                    row += `<td class="sphere">${item.Spirit || ''}</td>`;
+                    row += `<td class="sphere">${item.Time || ''}</td>`;
+                    row += `<td class="rote-desc">${item.description || ''}</td>`;
                     row += `</tr>`;
                     tableBody.append(row);
                 });
