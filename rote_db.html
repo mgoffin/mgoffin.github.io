@@ -13,7 +13,7 @@
             margin: 25px 0;
             font-size: 0.9em;
             font-family: sans-serif;
-            table-layout: fixed;
+            /*table-layout: fixed;*/
             width: 100%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
@@ -26,10 +26,25 @@
             background-color: #0076e4;
             color: #ffffff;
             text-align: left;
+            width: auto;
         }
         th, td {
             padding: 12px 15px;
+            width: auto;
         }
+        th:first-child {
+            width: 100px;
+        }
+        th:last-child {
+            width: 100%;
+        }
+        td:first-child {
+            width: 100px;
+        }
+        td:last-child {
+            width: 100%;
+        }
+        /*
         .rote-name th td {
             max-width: 100px;
         }
@@ -37,8 +52,9 @@
             max-width: 10px;
         }
         .rote-desc th td {
-            max-width: 100px;
+            max-width: 100%;
         }
+        */
         tbody tr {
             border-bottom: 1px solid #dddddd;
         }
