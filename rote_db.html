@@ -13,13 +13,21 @@
             margin: 25px 0;
             font-size: 0.9em;
             font-family: sans-serif;
+            table-layout: fixed;
             width: 100%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        tbody {
+            display: block;
+            width: 100%;
+            overflow: auto;
+            height: 50px;
         }
         thead tr {
             background-color: #0076e4;
             color: #ffffff;
             text-align: left;
+            display: block;
         }
         th, td {
             padding: 12px 15px;
