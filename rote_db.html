@@ -80,7 +80,7 @@
 <body>
     <h2>Filters</h2>
     <form id="filterForm">
-        <input type="text" placeholder="Rote" name="rote">
+        <!-- <input type="text" placeholder="Rote" name="rote"> -->
         <input type="text" placeholder="Correspondence" name="Correspondence">
         <input type="text" placeholder="Entropy" name="Entropy">
         <input type="text" placeholder="Forces" name="Forces">
@@ -172,6 +172,10 @@
                 e.preventDefault();
                 $("#filterForm")[0].reset();
                 populateTable(jsonData);
+            });
+            $("#zeroOut").click(function (e) {
+                e.preventDefault();
+                $(':input').val(0);
             });
         });
     </script>
