@@ -151,7 +151,7 @@
                         formValues[input.name] = parseInt(input.value.toLowerCase());
                     }
                 });
-                console.print(formValues);
+                console.log(formValues);
                 const filteredData = jsonData.filter(item => {
                     return Object.entries(formValues).every(([key, value]) =>
                         item[key] && parseInt(item[key].toString().toLowerCase()) <= value);
