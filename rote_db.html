@@ -147,7 +147,10 @@
             function filterTable() {
                 const formValues = {};
                 $('#filterForm').serializeArray().forEach(input => {
-                    if (input.value !== "") formValues[input.name] = parseInt(input.value.toLowerCase());
+                    if (input.value !== "") {
+                        console.log('value: ' + input.value);
+                        formValues[input.name] = parseInt(input.value.toLowerCase());
+                    }
                 });
                 const filteredData = jsonData.filter(item => {
                     return Object.entries(formValues).every(([key, value]) =>
@@ -163,7 +166,6 @@
                     jsonData = data;
                 })
                 .then(() => {
-                    console.log(jsonData);
                     populateTable(jsonData); // Initial population of the table
                 });
 
