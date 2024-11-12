@@ -93,6 +93,7 @@
         <!-- Add other fields as necessary -->
         <button type="button" id="filterButton">Apply Filter</button>
         <button type="button" id="clearButton">Clear Filter</button>
+        <button type="button" id="zeroOut">Zero Out</button>
     </form>
 
     <h2>Rote Table</h2>
@@ -127,23 +128,22 @@
                 data.forEach(item => {
                     let row = `<tr>`;
                     row += `<td class="rote-name">${item.rote || ''}</td>`;
-                    row += `<td class="sphere">${item.Correspondence || ''}</td>`;
-                    row += `<td class="sphere">${item.Entropy || ''}</td>`;
-                    row += `<td class="sphere">${item.Forces || ''}</td>`;
-                    row += `<td class="sphere">${item.Life || ''}</td>`;
-                    row += `<td class="sphere">${item.Matter || ''}</td>`;
-                    row += `<td class="sphere">${item.Mind || ''}</td>`;
-                    row += `<td class="sphere">${item.Prime || ''}</td>`;
-                    row += `<td class="sphere">${item.Spirit || ''}</td>`;
-                    row += `<td class="sphere">${item.Time || ''}</td>`;
+                    row += `<td class="sphere">${item.Correspondence || 0}</td>`;
+                    row += `<td class="sphere">${item.Entropy || 0}</td>`;
+                    row += `<td class="sphere">${item.Forces || 0}</td>`;
+                    row += `<td class="sphere">${item.Life || 0}</td>`;
+                    row += `<td class="sphere">${item.Matter || 0}</td>`;
+                    row += `<td class="sphere">${item.Mind || 0}</td>`;
+                    row += `<td class="sphere">${item.Prime || 0}</td>`;
+                    row += `<td class="sphere">${item.Spirit || 0}</td>`;
+                    row += `<td class="sphere">${item.Time || 0}</td>`;
                     row += `<td class="rote-desc">${item.description || ''}</td>`;
                     row += `</tr>`;
                     tableBody.append(row);
                 });
             }
 
-            // This needs to allow for the filtering to be done as an Integer
-            // The Integer entered needs to be a <= comparison.
+            // This needs to be fixed to allow searching with rote name and description
             function filterTable() {
                 const formValues = {};
                 $('#filterForm').serializeArray().forEach(input => {
