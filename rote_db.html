@@ -81,15 +81,15 @@
     <h2>Filters</h2>
     <form id="filterForm">
         <!-- <input type="text" placeholder="Rote" name="rote"> -->
-        <input type="text" placeholder="Correspondence" name="Correspondence">
-        <input type="text" placeholder="Entropy" name="Entropy">
-        <input type="text" placeholder="Forces" name="Forces">
-        <input type="text" placeholder="Life" name="Life">
-        <input type="text" placeholder="Matter" name="Matter">
-        <input type="text" placeholder="Mind" name="Mind">
-        <input type="text" placeholder="Prime" name="Prime">
-        <input type="text" placeholder="Spirit" name="Spirit">
-        <input type="text" placeholder="Time" name="Time">
+        C <input type="text" placeholder="Correspondence" name="Correspondence">
+        E <input type="text" placeholder="Entropy" name="Entropy">
+        F <input type="text" placeholder="Forces" name="Forces">
+        L <input type="text" placeholder="Life" name="Life">
+        Ma <input type="text" placeholder="Matter" name="Matter">
+        Mi <input type="text" placeholder="Mind" name="Mind">
+        P <input type="text" placeholder="Prime" name="Prime">
+        S <input type="text" placeholder="Spirit" name="Spirit">
+        T <input type="text" placeholder="Time" name="Time">
         <!-- Add other fields as necessary -->
         <button type="button" id="filterButton">Apply Filter</button>
         <button type="button" id="clearButton">Clear Filter</button>
@@ -147,7 +147,7 @@
             function filterTable() {
                 const formValues = {};
                 $('#filterForm').serializeArray().forEach(input => {
-                    if (input.value) formValues[input.name] = parseInt(input.value.toLowerCase());
+                    if (input.value !== "") formValues[input.name] = parseInt(input.value.toLowerCase());
                 });
                 const filteredData = jsonData.filter(item => {
                     return Object.entries(formValues).every(([key, value]) =>
